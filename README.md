@@ -12,11 +12,15 @@ Diese Abhaengigkeiten sind notwendig fuer die aktive
 (Mit-) Entwicklung des Rapporters:
 
 - UNIX / GNU/Linux als Host OS mit bash (fuer `./bin/build.sh` und `./bin/package.sh`)
-- [nwjs SDK](https://nwjs.io/downloads) mit Chromium v59+
+- [nwjs SDK](https://nwjs.io/downloads) mit Chromium v58+
 
 ```bash
 # Auf Arch Linux
 pacaur -S nwjs-sdk;
+
+# Minimum Version
+nw --version;
+nwjs 58.0.3029.81
 ```
 
 
@@ -42,7 +46,7 @@ nw .;
 ## Lizenz
 
 Die Lizenz ist noch ungeklaert. Der Rapporter ist vorerst als
-fuer Forschungs-Projekt und fuer Schulungs-Zwecke zu betrachten.
+Forschungs-Projekt und fuer Schulungs-Zwecke zu betrachten.
 
 Es wird keine Haftung oder Garantie jeglicher Art uebernommen.
 Verwendung auf eigene Verantwortung.
