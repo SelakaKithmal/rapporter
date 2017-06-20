@@ -1,0 +1,44 @@
+
+button,
+label.button {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 8px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+	border: 1px solid #2b2e39;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #ffffff;
+	background: #444a58;
+	font-family: 'Cantarell';
+	font-weight: normal;
+	font-style: normal;
+	outline: none;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+button:hover,
+button:focus,
+label.button:hover,
+label.button:focus {
+	background: #4e5665;
+}
+
+button:active,
+label.button:active {
+	background: #5294e2;
+}
+
+button[disabled],
+button[disabled]:focus,
+button[disabled]:hover {
+	color: #68818c;
+	background: #3e4351;
+	border: 1px solid #303440;
+	cursor: not-allowed;
+}
+

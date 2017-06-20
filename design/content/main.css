@@ -1,0 +1,141 @@
+
+*::-webkit-scrollbar {
+	width: 8px;
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	border: 1px solid #383d48;
+	border-radius: 8px;
+	background: #686e7a;
+	cursor: scroll;
+}
+
+main {
+	color: #ffffff;
+	font-size: 16px;
+	background: #383c4a;
+	border: 1px solid #272a34;
+	border-top: none;
+}
+
+main > section {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	border: 1px solid #272a34;
+	box-sizing: border-box;
+}
+
+main > section.inactive {
+	opacity: 0;
+	transition: all 200ms ease-out;
+	z-index: 510;
+}
+
+main > section.active {
+	opacity: 1;
+	transition: all 200ms ease-out;
+	z-index: 520;
+}
+
+section {
+	background: #404552;
+}
+
+
+section > header {
+	position: absolute;
+	height: 48px;
+	line-height: 46px;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	left: 0px;
+	margin: 0px;
+	padding: 0px 8px;
+	background: #383c4a;
+	border: 0px none;
+	border-bottom: 1px solid #272a34;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+section > header > ul {
+	display: block;
+	width: auto;
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+	overflow: visible;
+	box-sizing: border-box;
+}
+
+section > header > ul > li {
+	display: inline-block;
+	width: 128px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0px;
+	padding: 0px 8px;
+	color: #acb7c3;
+	font-family: 'Cantarell';
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	border: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-radius: 4px 4px 0px 0px;
+	box-sizing: border-box;
+	list-style: none;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+section > header > ul > li:hover {
+	color: #ffffff;
+}
+
+section > header > ul > li.active {
+	color: #ffffff;
+	border: 1px solid #272a34;
+	border-bottom: 1px solid transparent;
+	background: #404552;
+}
+
+section > article {
+	position: absolute;
+	top: 48px;
+	right: 0px;
+	bottom: 48px;
+	left: 0px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+section > footer {
+	position: absolute;
+	height: 48px;
+	line-height: 46px;
+	top: auto;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px 8px;
+	background: #383c4a;
+	border: 0px none;
+	border-top: 1px solid #272a34;
+	box-sizing: border-box;
+}
+
+section > footer,
+section > footer > * {
+	-webkit-user-select: none;
+	user-select: none;
+}
+

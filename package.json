@@ -1,0 +1,23 @@
+{
+	"main":            "./index.html",
+	"name":            "rapporter",
+	"description":     "Rapporter",
+	"version":         "${version}",
+	"window": {
+		"title":       "Rapporter (by MM-Automation GmbH)",
+		"icon":        "./design/icon.png",
+		"toolbar":     false,
+		"frame":       true,
+		"show":        true,
+		"transparent": false,
+		"position":    "mouse",
+		"width":       600,
+		"height":      920,
+		"min_width":   400,
+		"min_height":  512
+	},
+	"webkit": {
+		"plugin": false
+	},
+	"nodejs": true
+}

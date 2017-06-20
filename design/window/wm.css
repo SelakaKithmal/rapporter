@@ -1,0 +1,361 @@
+
+header#wm {
+	display: block;
+	width: auto;
+	height: 32px;
+	background: #2e333f;
+	border: 1px solid #272a34;
+	box-sizing: border-box;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	left: 0px;
+	font-family: 'Cantarell';
+	font-weight: normal;
+	z-index: 1000;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-app-region: drag;
+}
+
+header#wm > * {
+	-webkit-app-region: no-drag;
+}
+
+header#wm.inactive {
+	background: #313743;
+}
+
+
+/*
+ * LEFT
+ */
+
+header#wm div#wm-left {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: auto;
+	bottom: auto;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+header#wm img#wm-icon {
+	display: block;
+	width: 36px;
+	height: 30px;
+	margin: 0px;
+	padding: 0px 3px;
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+header#wm img#wm-icon:hover {
+	border: 1px solid #242932;
+	border-radius: 2px;
+	background: #404857;
+}
+
+
+
+/*
+ * CENTER
+ */
+
+div#wm-center {
+	position: absolute;
+	text-align: left;
+	top: 0px;
+	left: 48px;
+	right: auto;
+	bottom: auto;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	line-height: 30px;
+}
+
+ul.wm-history {
+	display: inline-block;
+	height: 30px;
+	margin: 0px 16px 0px 0px;
+	padding: 0px 0px 0px 16px;
+	border-left: 1px solid #414853;
+}
+
+ul.wm-history > li {
+	display: inline-block;
+	width: auto;
+	height: 30px;
+	margin: 0px 1px;
+	padding: 0px;
+	list-style: none;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+ul.wm-history > li:last-of-type {
+	margin: 0px;
+}
+
+ul.wm-history > li:hover,
+ul.wm-history > li.active {
+	border: 1px solid #242932;
+	border-radius: 2px;
+}
+
+ul.wm-history > li > img {
+	width: 36px;
+	height: 30px;
+	margin: 0px;
+	padding: 0px 3px;
+	background: transparent;
+	box-sizing: border-box;
+}
+
+/*
+ * base color is #d0494b
+ * which is rgb(208, 73, 75)
+ * which is hsla(359, 59.0%, 55.1%, 1)
+ */
+
+ul.wm-history:nth-child(1) > li:hover,
+ul.wm-history:nth-child(1) > li.active,
+ul.wm-history:nth-child(11) > li:hover,
+ul.wm-history:nth-child(11) > li.active {
+	background: hsla(359, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(2) > li:hover,
+ul.wm-history:nth-child(2) > li.active,
+ul.wm-history:nth-child(12) > li:hover,
+ul.wm-history:nth-child(12) > li.active {
+	background: hsla( 35, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(3) > li:hover,
+ul.wm-history:nth-child(3) > li.active,
+ul.wm-history:nth-child(13) > li:hover,
+ul.wm-history:nth-child(13) > li.active {
+	background: hsla( 71, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(4) > li:hover,
+ul.wm-history:nth-child(4) > li.active,
+ul.wm-history:nth-child(14) > li:hover,
+ul.wm-history:nth-child(14) > li.active {
+	background: hsla(107, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(5) > li:hover,
+ul.wm-history:nth-child(5) > li.active,
+ul.wm-history:nth-child(15) > li:hover,
+ul.wm-history:nth-child(15) > li.active {
+	background: hsla(143, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(6) > li:hover,
+ul.wm-history:nth-child(6) > li.active,
+ul.wm-history:nth-child(16) > li:hover,
+ul.wm-history:nth-child(16) > li.active {
+	background: hsla(179, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(7) > li:hover,
+ul.wm-history:nth-child(7) > li.active,
+ul.wm-history:nth-child(17) > li:hover,
+ul.wm-history:nth-child(17) > li.active {
+	background: hsla(215, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(8) > li:hover,
+ul.wm-history:nth-child(8) > li.active,
+ul.wm-history:nth-child(18) > li:hover,
+ul.wm-history:nth-child(18) > li.active {
+	background: hsla(251, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(9) > li:hover,
+ul.wm-history:nth-child(9) > li.active,
+ul.wm-history:nth-child(19) > li:hover,
+ul.wm-history:nth-child(19) > li.active {
+	background: hsla(287, 59%, 55%, 0.5);
+}
+
+ul.wm-history:nth-child(10) > li:hover,
+ul.wm-history:nth-child(10) > li.active,
+ul.wm-history:nth-child(20) > li:hover,
+ul.wm-history:nth-child(20) > li.active {
+	background: hsla(323, 59%, 55%, 0.5);
+}
+
+
+
+/*
+ * RIGHT
+ */
+
+header#wm div#wm-right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	left: auto;
+}
+
+div#wm-actions {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 16px 0px 0px;
+	border-right: 1px solid #414853;
+	vertical-align: top;
+}
+
+div#wm-actions > button {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	min-width: 36px;
+	height: 30px;
+	color: #ffffff;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background: transparent;
+	box-sizing: border-box;
+	vertical-align: top;
+	outline: none;
+	cursor: pointer;
+}
+
+div#wm-actions > button#wm-donate {
+	padding: 0px 8px;
+}
+
+div#wm-actions > button:focus,
+div#wm-actions > button:hover {
+	border: 1px solid #242932;
+	border-radius: 2px;
+	background: #404857;
+}
+
+div#wm-actions > button:active {
+	color: #ffffff;
+	border: 1px solid #5294e2;
+	border-radius: 2px;
+	background: #5294e2;
+}
+
+div#wm-actions > button#wm-settings:before {
+	color: #ffffff;
+	content: "☰";
+	display: block;
+	text-align: center;
+}
+
+div#wm-buttons {
+	display: inline-block;
+	margin: 0px 8px 0px 0px;
+	vertical-align: top;
+	height: 30px;
+	line-height: 26px;
+}
+
+div#wm-buttons > button {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0px 0px 0px 16px;
+	padding: 0px;
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: 16px;
+	box-sizing: border-box;
+	outline: none;
+	cursor: pointer;
+}
+
+div#wm-buttons > button:active,
+div#wm-buttons > button:focus {
+	outline: none;
+}
+
+div#wm-buttons > button#wm-minimize {
+	border: 1px solid #da9e10;
+	background: #fac536;
+}
+
+div#wm-buttons > button#wm-maximize {
+	border: 1px solid #13c11e;
+	background: #39ea49;
+}
+
+div#wm-buttons > button#wm-close {
+	border: 1px solid #d52735;
+	background: #f25056;
+}
+
+
+/*
+ * INACTIVE WINDOW
+ */
+
+header#wm.inactive img#wm-icon {
+	opacity: 0.5;
+}
+
+header#wm.inactive img#wm-icon:hover {
+	opacity: 1;
+}
+
+header#wm.inactive div#wm-center > ul.wm-history li img {
+	opacity: 0.5;
+}
+
+header#wm.inactive div#wm-center > ul.wm-history li:hover img {
+	opacity: 1;
+}
+
+header#wm.inactive div#wm-buttons > button#wm-minimize,
+header#wm.inactive div#wm-buttons > button#wm-maximize,
+header#wm.inactive div#wm-buttons > button#wm-close {
+	border: 1px solid #b4b4b4;
+	background: #d4d4d4;
+}
+
+header#wm.inactive div#wm-buttons > button#wm-minimize:hover {
+	border: 1px solid #da9e10;
+	background: #fac536;
+}
+
+header#wm.inactive div#wm-buttons > button#wm-maximize:hover {
+	border: 1px solid #13c11e;
+	background: #39ea49;
+}
+
+header#wm.inactive div#wm-buttons > button#wm-close:hover {
+	border: 1px solid #d52735;
+	background: #f25056;
+}
+
+
+
+/*
+ * SMALL WINDOW FIXES
+ */
+
+@media (max-width: 525px) {
+
+	header#wm div#wm-right div#wm-actions {
+		display: none;
+	}
+
+}
+

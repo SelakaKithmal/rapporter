@@ -1,0 +1,79 @@
+
+body {
+	font-family: 'Cantarell';
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+footer {
+	position: fixed;
+	top: auto;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 16px;
+	color: #ffffff;
+	background: #444444;
+	transition: 250ms all ease-out;
+	transform: translate(0%, 100%);
+}
+
+footer.visible {
+	transform: translate(0%, 0%);
+}
+
+footer > section {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	align-items: center;
+	border: 0px solid transparent;
+}
+
+footer > section h3 {
+	display: block;
+	min-width: 100%;
+	margin: 0px 0px 24px 0px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+footer > section div {
+	flex: 1;
+	margin: auto;
+	padding: 0px;
+}
+
+footer > section div b {
+	margin: 0px 1em 0px 0px;
+}
+
+footer > section div.wide {
+	display: block;
+	margin: 3em auto auto auto;
+	padding: 0px;
+	min-width: 100%;
+	flex: 100;
+}
+
+footer > section div.wide b {
+	display: block;
+	margin: 0px 0px 1em 0px;
+}
+
+
+
+/*
+ * UI
+ */
+
+footer > section textarea {
+	width: 100%;
+}
+
+footer > section div span {
+	width: auto;
+	text-align: left;
+}

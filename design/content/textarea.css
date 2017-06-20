@@ -1,0 +1,33 @@
+
+textarea {
+	display: block;
+	margin: 0px;
+	padding: 8px;
+	width: 30em;
+	height: 10em;
+	color: #ffffff;
+	background: #444a58;
+	font-family: 'Cantarell';
+	font-weight: normal;
+	font-style: normal;
+	border: 1px solid #262934;
+	border-radius: 2px;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	transition: 250ms all ease-out;
+	outline: none;
+}
+
+textarea:focus {
+	border: 1px solid #5294e2;
+}
+
+textarea[disabled] {
+	color: #68818c;
+	background: #3e4351;
+	border: 1px solid #303440;
+	cursor: not-allowed;
+}
+
