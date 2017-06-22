@@ -5,6 +5,16 @@ body {
 	font-style: normal;
 }
 
+header {
+  background-color: grey;
+  border-bottom: 0px solid #737373;
+  position: fixed;
+  top: 0px ;
+  right:0px;
+	bottom: auto;
+	left: 0px;
+  z-index: 100;
+ }
 
 footer {
 	position: fixed;
@@ -18,6 +28,7 @@ footer {
 	background: #444444;
 	transition: 250ms all ease-out;
 	transform: translate(0%, 100%);
+	z-index: 100;
 }
 
 footer.visible {
